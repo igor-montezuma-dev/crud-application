@@ -4,8 +4,15 @@
     <h1 class="title">CRUD USUÁRIOS</h1>
     <h2 class="caption">Mais eficiência no controle de usuários</h2>
 
-    <input class="form-input" type="text" placeholder="Informe seu nome..." />
-    <app-button [buttonText]="'Acessar'" [size]="'100'" />
+    <input
+      [(ngModel)]="userName"
+      [ngModelOptions]="{ standalone: true }"
+      class="form-input"
+      type="text"
+      placeholder="Informe seu nome..."
+    />
+
+    <app-button [buttonText]="'Acessar'" [size]="'100'" (click)="login()" />
   </form>
 
   <p class="footer">©️2024 | Desesenvolvido por Igor Montezuma</p>

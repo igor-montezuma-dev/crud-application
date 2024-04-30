@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +21,7 @@ import { LoginComponent } from './pages/login/login.component';
     HomeComponent,
     MenuComponent,
   ],
-  imports: [CommonModule, BrowserModule, AppRoutingModule, FormsModule, MatIconModule],
+  imports: [CommonModule, BrowserModule, AppRoutingModule, FormsModule, MatIconModule, MatProgressSpinnerModule],
 
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],

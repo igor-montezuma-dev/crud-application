@@ -1,2 +1,73 @@
 <app-menu />
-<p>home works!</p>
+<div class="container-fluid pt-3">
+  <div class="row">
+    <div class="col-12 col-lg-9">
+      <div class="card-info">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <h1 class="title">Crud usuários</h1>
+            <h3 class="caption">
+              Mais eficiência na gestão dos <span>usuários</span> e de seus
+              benefícios. Chega de sistemas complexos e lentos. Com o
+              <span>Crud usuários</span> você tem tudo o que precisa para
+              gerenciar seus usuários de forma simples e eficiente.<br />
+              Confira um resumo das informações em nosso <span>Dashboard</span>
+            </h3>
+            <app-button
+              [buttonText]="'Iniciar'"
+              routerLink="/usuarios"
+            ></app-button>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="/assets/images/dashboard.png"
+              alt="Imagem Dashboard"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-6">
+          <div class="card-info">
+            <div class="row">
+              <div class="col-8">
+                <p class="card-text">Total de usuários cadastrados</p>
+                <p class="card-number">79</p>
+                <p class="highlight-card">+5 adicionados no último mês</p>
+              </div>
+              <div class="col-4">
+                <mat-progress-spinner
+                  class="example-margin mx-auto color-spinner"
+                  mode="determinate"
+                  value="79"
+                ></mat-progress-spinner>
+                <p class="info-spinner">79/150</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card-info">
+            <div class="row">
+              <div class="col-8">
+                <p class="card-text">Total de benefícios cadastrados</p>
+                <p class="card-number">4/5</p>
+                <p class="highlight-card">+2 adicionados no último mês</p>
+              </div>
+              <div class="col-4">
+                <mat-progress-spinner
+                  class="example-margin mx-auto color-spinner"
+                  mode="determinate"
+                  value="80"
+                ></mat-progress-spinner>
+                <p class="info-spinner">4/5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
